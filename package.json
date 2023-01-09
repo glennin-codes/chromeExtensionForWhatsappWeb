@@ -2,20 +2,23 @@
   "name": "extension",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"nodemon index.js"
+    "dev": "nodemon index.js",
+    "start":"node index"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  
-    "dependencies": {
-      "puppeteer": "^19.5.0",
-      "dotenv": "^16.0.3",
-      "nodemon": "^2.0.20"
-    }
-  
-  
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "nodemon": "^2.0.20",
+    "path": "^0.12.7",
+    "puppeteer": "^19.5.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
 }
